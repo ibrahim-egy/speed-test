@@ -26,7 +26,6 @@ def generate_text():
 
     random_text = random_text[1:]
     canvas.itemconfig(test_text, text=random_text, fill="#3A3845")
-    print(random_text)
     input_text = Entry(window, width=30, font='Arial 20')
     input_text.bind('<Return>', get_answer)
     input_text.grid(column=0, row=0, columnspan=2)
